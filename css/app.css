@@ -1,0 +1,24 @@
+*{padding: 0;margin: 0;font-size: 13px;}
+
+
+#audioPlayer{margin-top: 10px;display: block;}
+#audioPlayer.fixed{position: fixed;top: -10px;left: 0;z-index: 999999;right: 0;}
+.QMusic_box {	padding: 3px;padding-right: 5px;  margin: 0 auto; width: 100%; height: 70px; overflow: hidden; text-align:left;  background: url(../img/dot.jpg); box-sizing: border-box;}
+.QMusic_box_bg{background: #fff;margin: 0;overflow: hidden;height: 100%;  position: relative;padding-left: 83px;}
+.QMusic_box  .music-nav { text-align: left;}
+.QMusic_scale{position: absolute;left: 83px;top: 30px;right: 110px; }
+.QMusic_scale input{width: 100%;height: 0.25em; -webkit-appearance: none;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;  -webkit-appearance: none;/*清除系统默认样式*/  
+  background: -webkit-linear-gradient(#fa4e68, #fa4e68) no-repeat, #ddd;/*设置左边颜色为#61bd12，右边颜色为#ddd*/  
+  background-size: 0% 100%;/*设置左右宽度比例*/ }
+.QMusic_scale input::-webkit-slider-thumb {  width: 12px;  height: 12px;  border-radius: 12px; border: 2px solid #fdcad1;background: #fa4e68;  -webkit-appearance: none;}
+.QMusic_cover{  width: 65px;  height: 65px;  position: absolute;  left: 0;right: 0;  background-image: url(../img/bgpic_05.jpg);  background-size: 100%;}
+.QMusic_cover:before{content: '';display: inline-block;background: url(../img/QMusic_play.png) no-repeat;position: absolute;width: 28px;height: 28px;-webkit-background-size: 28px;
+background-size: 28px;left: 18px;top: 18px;}
+.QMusic_box  audio { margin: 2.5rem;}
+.QMusic_title{font-size: 1.2em;line-height: 1.2em;color: #666;text-align:left;margin-top: 12px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.QMusic_box .cover-play:before{background: url(../img/QMusic_stop.png) no-repeat;-webkit-background-size: 28px;
+background-size: 28px;}
+.QMusic_time{position: absolute;right: 10px;font-size: 1.2em;top: 32px;color: #aaa;}
+.QMusic_time .red{color: #fa4e68;}
